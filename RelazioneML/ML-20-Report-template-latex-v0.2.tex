@@ -1,0 +1,38 @@
+\documentclass[12pt, letterpaper]{article}  % change to >11 pt if you like, and change article with report
+\usepackage[letterpaper, top=3.71cm, bottom=3.20cm, left=2.86cm, right=2.86cm]{geometry}
+%top = 2.44 (header in doc) + 1.27
+% bottom 1.42 (footer in doc) + 1.78
+\usepackage[utf8]{inputenc}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{subfig}
+\usepackage{float}
+\usepackage{hyperref}
+%\usepackage[style=bath,mergedate=false,sorting=ynt]{biblatex}
+
+\title{\vspace{-2cm}\textbf{Machine Learning project report}}
+\author{\small{\textit{Dalla Noce Niko, Ristori Alessandro}.} \\ % put your full name here
+        \small{Master Degree in Computer science.}\\ \small{{n.dallanoce@studenti.unipi.it, a.ristori5@studenti.unipi.it}.} \\  % put your Master Degree here
+        \small{Machine Learning (654AA), Academic Year: 2020/2021} \\
+        \small{Date: 24/01/2021} \\
+        \small{Type of project: \textbf{A}}
+}
+
+\renewcommand\refname{} %remove this line to automatically show the bibliography header
+
+\begin{document}
+\nocite{*}  % comment this line to list only the articles you really cite
+\date{}
+\maketitle
+\begin{abstract}
+The purpose of this report is to show the results obtained in our project by applying the techniques we learnt during the machine learning course. We developed a python library that builds a fully connected neural network and tunes its hyper-parameters using a K-fold cross validation with grid search.
+\end{abstract}
+%\include{Sections/abstract}
+\newpage
+\input{Sections/introduction}
+\input{Sections/method}
+\input{Sections/experiments}
+\input{Sections/conclusion}
+\input{Sections/references}
+\end{document}
